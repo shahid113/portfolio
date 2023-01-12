@@ -1,0 +1,29 @@
+<div class="container-fluid common-main">
+  <h5 style="color: white; margin-top:10px">Experience</h5>
+
+      <div class="common-card-div">
+        <div class="card common-card mb-3" style="max-width: 540px; min-width:300px" *ngFor="let item of experience">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="{{item.img}}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{item.job}}</h5>
+                <p class="card-text">{{item.company}}</p>
+                <p class="card-text">{{item.duration}}</p>
+                <p class="card-text">{{item.techStack}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <button type="button"  class="btn btn-outline-success mt-4" (click)="showEdu()">
+            <i class="bi bi-arrow-right-circle "></i>
+          </button>
+
+      </div>
+
+</div>
+  
+

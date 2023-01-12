@@ -1,0 +1,45 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.common-card-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+
+  .common-main{
+    min-height: 100vh;
+  }
+  
+  .common-card {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    padding: 30px;
+    width: 50%;
+    margin:30px;
+    background-color: black;
+    color: white;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  }
+

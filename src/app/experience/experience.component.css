@@ -1,0 +1,14 @@
+.card{
+    transition: width 2s, height 2s, transform 2s;
+    transform: rotate(180deg);
+}
+
+
+
+.card:hover{
+    transform:rotate(0deg);
+}
+
+.common-main{
+    height: fit-content;
+}

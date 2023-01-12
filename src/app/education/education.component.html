@@ -1,0 +1,19 @@
+<div class="container-fluid common-main">
+  <h5 style="color: white; margin-top:10px">Education</h5>
+   <div class="common-card-div">
+      <div class="card common-card" *ngFor="let item of educationalData" style="min-width:300px">
+        <h5 class="card-header">{{item.degree}}</h5>
+        <div class="card-body">
+          <h5 class="card-title">CGPA {{item.cgpa}}</h5>
+          <p class="card-text">{{item.university}}</p>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-outline-success mt-4" (click)="showProject()">
+        <i class="bi bi-arrow-right-circle "></i>
+      </button>
+
+   </div>
+
+    
+</div>

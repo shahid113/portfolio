@@ -1,0 +1,31 @@
+<div class="container-fluid main">
+ <h5 style="color:white; margin-top:10px">Projects</h5> 
+    <div class="row row-cols-1 row-cols-md-2 g-4" *ngIf="!loader">
+      <div class="col" *ngFor="let item of projects">
+        <div class="card m-3 "  style="max-width: 540px; min-width:300px">
+          <div class="card-body">
+            <h5 class="card-title">{{item.projectName}}</h5>
+            <p class="card-text">{{item.duration}}</p>
+            <p class="card-text">{{item.description}}</p>
+            <button class="btn btn-outline-success btn-sm" style="float:right"><a style="text-decoration: none; color:white" href="{{item.link}}" target="_blank">Show</a></button>
+          </div>
+        </div>
+      </div>
+
+
+      <button type="button" class="btn btn-outline-success next" (click)="showSkills()">
+        <i class="bi bi-arrow-right-circle "></i>
+      </button>
+
+    </div>
+
+
+
+  <div class="ring" *ngIf="loader">Loading
+    <span></span>
+  </div>
+
+
+
+   
+</div>
