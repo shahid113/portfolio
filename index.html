@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Shahid Siddique</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <h1 class="display-5">Welcome to My Portfolio</h1>
+            <p class="lead">Discover my creative work.</p>
+            <a href="#portfolio" class="btn btn-primary btn-sm">View Portfolio</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-4">
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4 m-auto">
+                        <!-- Use a round photo -->
+                        <img src="./assets/myphoto.jpeg" alt="Your Photo" class="img-thumbnail rounded-circle">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <!-- Smaller font size -->
+                            <h2 class="card-title" style="font-size: 1.5rem;">About Me</h2>
+                            <p class="card-text" style="font-size: 1rem;">
+                                I'm a versatile web developer proficient in Angular for dynamic front-end design,
+                                Node.js for efficient server-side applications, MongoDB for flexible data management,
+                                SQL for relational databases, Laravel for PHP-based back-end systems, and C programming.
+                                I excel in full-stack development, thrive on problem-solving, and stay updated with
+                                industry trends. Let's collaborate to bring your web projects to life.
+                            </p>
+                            <a href="./assets/ShahidResumeFinal.pdf" class="btn btn-primary btn-sm" download>Download Resume</a>
+    
+                            <!-- Social links -->
+                            <div class="social-links mt-3">
+                                <a href="https://www.facebook.com/shahidsiddique01" target="_blank" class="btn btn-social btn-facebook">
+                                    <i class="fab fa-facebook-f"></i> Facebook
+                                </a>
+                                <a href="https://github.com/shahid113" target="_blank" class="btn btn-social btn-twitter">
+                                    <i class="fab fa-github"></i> Twitter
+                                </a>
+                                <a href="https://www.linkedin.com/in/shahid-siddique-038a92206/" target="_blank" class="btn btn-social btn-linkedin">
+                                    <i class="fab fa-linkedin-in"></i> LinkedIn
+                                </a>
+                                <!-- Add more social links as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="bg-dark text-white py-4">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-white mb-3">Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4">
+                   <a href="https://ecommerce-project-app.netlify.app/" style="text-decoration:none" target="_blank">
+                    <div class="card mb-3">
+                        <img src="./assets/genix.png" alt="Project 1" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Full Stack Ecommerce App</h3>
+                            <p class="card-text">Tech Stack Angular, NodeJs, MongoDB, Cloudinary</p>
+                        </div>
+                    </div>
+                   </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="#portfolio" style="text-decoration:none">
+                        <div class="card mb-3">
+                            <img src="./assets/school.jpeg" alt="Project 1" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">School Management System</h3>
+                                <p class="card-text">Tech Stack PHP Laravel, MySQL Database. Final Year Project.</p>
+                            </div>
+                        </div>
+                       </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href=" " style="text-decoration:none" target="_blank">
+                        <div class="card mb-3">
+                            <img src="./assets/ads.png" alt="Project 1" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Ads blocker Chrome Extension</h3>
+                                <p class="card-text">Tech Stack HTML, CSS, JavaScript</p>
+                            </div>
+                        </div>
+                       </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="https://movie-masala.netlify.app/" style="text-decoration:none" target="_blank">
+                        <div class="card mb-3">
+                            <img src="./assets/movieapp.jpg" alt="Project 1" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">Movie Info App</h3>
+                                <p class="card-text">Tech Stack Angular. MovieDB API for information.</p>
+                            </div>
+                        </div>
+                       </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-3">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Contact Me</h2>
+                    <p class="card-text">Feel free to get in touch with me for collaboration or inquiries.</p>
+                    <form action="https://formspree.io/f/mjvqwald" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message:</label>
+                            <textarea id="message" name="message" class="form-control" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm">Send</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; Shahid Siddique. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to Bootstrap JS (Optional, if you need Bootstrap JavaScript features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
